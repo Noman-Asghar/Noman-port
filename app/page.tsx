@@ -1,4 +1,5 @@
 // import Client from "@/components/Client";
+import React, { useEffect } from 'react';
 import Experience from "@/components/Experience";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
