@@ -1,5 +1,7 @@
-// import Client from "@/components/Client";
-import React, { useEffect } from 'react';
+'use client';
+
+
+import { useEffect } from 'react';
 import Experience from "@/components/Experience";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
@@ -7,8 +9,8 @@ import Approch from "@/components/Approch";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems } from "@/data";
-import Image from "next/image";
-import { FaHome } from "react-icons/fa";
+// import Image from "next/image";
+// import { FaHome } from "react-icons/fa";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -23,7 +25,6 @@ export default function Home() {
  <Hero />
  <Grid />
  <RecentProjects />
- {/* <Client /> */}
  <Experience />
  <Approch />
  <Footer />
