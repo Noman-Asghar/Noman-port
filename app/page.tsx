@@ -14,9 +14,10 @@ import { navItems } from "@/data";
 import Footer from "@/components/Footer";
 
 export default function Home() {
-   useEffect(() => {
-    // Client-side pe hi yeh code chalega
-    document.title = "My Page Title"; // Yeh line sirf client-side pe chalegi
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      document.title = "My Page Title"; // Client-side pe hi chalega
+    }
   }, []);
   return (
    <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
